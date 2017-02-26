@@ -26,7 +26,7 @@ $statement->closeCursor();
     <table>
         <tr>
             <th>Name</th>
-            <!-- <th>&nbsp;</th> -->
+            <th>&nbsp;</th>
         </tr>
 
         <?php foreach ($categories as $category) : ?>
@@ -47,7 +47,14 @@ $statement->closeCursor();
 
     <h2>Add Category</h2>
 
-    <!-- add code for the form here -->
+    <form action="add_category.php" method="post"
+          id="add_category_form">
+          <label>Name:</label>
+          <input type="text" name="name"><br>
+          <label>&nbsp;</label>
+          <input type="submit" value="Add Category"><br>
+      </form>
+  <!-- add code for the form here -->
 
     <br>
     <p><a href="index.php">List Products</a></p>

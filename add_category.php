@@ -10,7 +10,7 @@ if ($name == null) {
     require_once('database.php');
 
     // Add the product to the database
-    $query = 'INSERT INTO category_guitar1
+    $query = 'INSERT INTO categories_guitar1
                  (categoryName)
               VALUES
                  (:name)';

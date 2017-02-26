@@ -5,7 +5,7 @@ $query = 'SELECT *
           ORDER BY categoryID';
 $statement = $db->prepare($query);
 $statement->execute();
-$categories = $statement->fetchAll();
+  $categories = $statement->fetchAll();
 $statement->closeCursor();
 ?>
 <!DOCTYPE html>

@@ -20,6 +20,6 @@ if ($name == null) {
     $statement->closeCursor();
 
     // Display the category List page
-    include('add_category.php');
+    include('category_list.php');
 }
 ?>

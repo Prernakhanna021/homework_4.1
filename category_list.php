@@ -51,7 +51,6 @@ $statement->closeCursor();
           id="add_category_form">
           <label>Name:</label>
           <input type="text" name="name"><br>
-          <label>&nbsp;</label>
           <input type="submit" value="Add Category"><br>
       </form>
   <!-- add code for the form here -->

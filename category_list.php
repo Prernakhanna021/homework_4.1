@@ -29,11 +29,25 @@ $statement->closeCursor();
             <th>&nbsp;</th>
         </tr>
 
-        <!-- add code for the rest of the table here -->
+
+        <<h2>Categories</h2>
+        <nav>
+        <ul>
+            <?php foreach ($categories as $category) : ?>
+            <li>
+                <?php echo $category['categoryName']; ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        </nav>
+    </aside>
+
+    <section>!-- add code for the rest of the table here -->
 
     </table>
 
     <h2>Add Category</h2>
+
 
     <!-- add code for the form here -->
 

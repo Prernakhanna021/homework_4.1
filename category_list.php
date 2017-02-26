@@ -28,13 +28,12 @@ $statement->closeCursor();
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-        <ul>
-            <?php foreach ($categories as $category) : ?>
-            <li>
-                <?php echo $category['categoryName']; ?>
-            </li>
-            <?php endforeach; ?>
-        </ul>
+
+        <?php foreach ($categories as $category) : ?>
+        <tr>
+            <td><?php echo $category['categoryName']; ?></td>
+        </tr>
+        <?php endforeach; ?>
     </table>
 
     <h2>Add Category</h2>

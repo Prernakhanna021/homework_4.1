@@ -28,9 +28,7 @@ $statement->closeCursor();
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-
-
-        <<h2>Categories</h2>
+        <h2>Categories</h2>
         <nav>
         <ul>
             <?php foreach ($categories as $category) : ?>
@@ -42,12 +40,11 @@ $statement->closeCursor();
         </nav>
     </aside>
 
-    <section>!-- add code for the rest of the table here -->
+    <section>
 
     </table>
 
     <h2>Add Category</h2>
-
 
     <!-- add code for the form here -->
 

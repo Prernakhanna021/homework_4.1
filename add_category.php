@@ -14,6 +14,7 @@ if ($name == null) {
                  (categoryName)
               VALUES
                  (:name)';
+    $statement = $db->prepare($query);
     $statement->bindValue(':name', $name);
     $statement->execute();
     $statement->closeCursor();

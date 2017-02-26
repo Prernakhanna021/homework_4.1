@@ -4,7 +4,7 @@ require_once('database.php');
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 
 // Delete the categoryName from the database
-if ($categoryName != false) {
+if ($category_id != false) {
     $query = 'DELETE FROM categories_guitar1
               WHERE categoryID = :categoryID';
     $statement = $db->prepare($query);

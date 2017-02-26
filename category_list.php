@@ -23,15 +23,11 @@ $statement->closeCursor();
 <header><h1>Product Manager</h1></header>
 <main>
     <h1>Category List</h1>
-    <h2>Categories</h2>
-    <section>
-    <aside>
     <table>
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-        <nav>
         <ul>
             <?php foreach ($categories as $category) : ?>
             <li>
@@ -39,9 +35,6 @@ $statement->closeCursor();
             </li>
             <?php endforeach; ?>
         </ul>
-        </nav>
-    </aside>
-    </section>
     </table>
 
     <h2>Add Category</h2>

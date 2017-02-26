@@ -26,7 +26,7 @@ $statement->closeCursor();
     <table>
         <tr>
             <th>Name</th>
-            <th>&nbsp;</th>
+            <!-- <th>&nbsp;</th> -->
         </tr>
 
         <?php foreach ($categories as $category) : ?>

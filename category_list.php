@@ -32,9 +32,18 @@ $statement->closeCursor();
         <?php foreach ($categories as $category) : ?>
         <tr>
             <td><?php echo $category['categoryName']; ?></td>
+            <td><form action="delete_category.php" method="post">
+                <input type="hidden" name="category_id"
+                       value="<?php echo $category['categoryID']; ?>">
+                <input type="submit" value="Delete">
+            </form></td>
         </tr>
+        </tr>
+
         <?php endforeach; ?>
+
     </table>
+
 
     <h2>Add Category</h2>
 
